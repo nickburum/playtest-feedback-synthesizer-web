@@ -1,0 +1,61 @@
+tester_id,build,source,feedback
+T11,0.4.1,survey,The camera keeps getting stuck behind walls in tight corridors.
+T13,0.4.1,Discord,Camera clips through walls when I fight near the edge of the arena.
+T03,0.4.1,notes,I lost track of enemies because the camera swings around too fast during lock-on.
+T12,0.4.1,survey,"Camera is way too close to the character, I can't see attacks coming from behind."
+T17,0.4.1,Discord,The camera fights me whenever I try to dodge near a wall.
+T02,0.4.1,notes,Lock-on camera flips to the wrong enemy constantly.
+T14,0.4.2,survey,"Please add a camera distance slider, the default view feels cramped."
+T03,0.4.1,Discord,Camera gets stuck behind pillars in the courtyard fight.
+T03,0.4.2,notes,Got motion sick from how jerky the camera is when sprinting.
+T02,0.4.1,survey,"Camera auto-centering is too aggressive, it keeps snapping back."
+T08,0.4.1,Discord,In the cave section the camera clipped into the rock and I couldn't see anything.
+T13,0.4.1,notes,"The camera is the biggest problem right now, it ruins the combat."
+T08,0.4.1,survey,The Warden boss at the end of level 3 is a massive difficulty spike.
+T18,0.4.1,Discord,Went from breezing through level 2 to dying 15 times on the Warden.
+T10,0.4.2,notes,"Difficulty jumps way too hard in level 3, almost quit."
+T05,0.4.1,survey,The Warden boss does too much damage compared to everything before it.
+T10,0.4.1,Discord,"Level 3 difficulty spike feels unfair, no checkpoint before the boss either."
+T04,0.4.1,notes,"I had no idea how to beat the Warden, the difficulty curve is a wall."
+T12,0.4.1,survey,"Enemies in level 3 suddenly hit twice as hard, felt like a different game."
+T18,0.4.1,Discord,Rage quit at the Warden. Way harder than anything else in the build.
+T02,0.4.1,notes,The arena wave before the Warden is brutal and then the boss is even harder.
+T16,0.4.2,survey,"Difficulty spike at level 3 needs smoothing, maybe add a checkpoint."
+T11,0.4.2,Discord,I didn't know where to go after the bridge collapsed.
+T15,0.4.2,notes,"The objective in the market district is unclear, I wandered for 10 minutes."
+T10,0.4.1,survey,"No waypoint after talking to the blacksmith, had no clue what to do next."
+T06,0.4.1,Discord,Objective text says 'find the key' but doesn't say where to look.
+T03,0.4.2,notes,"Got lost after the bridge cutscene, the objective marker disappeared."
+T17,0.4.2,survey,"I wasn't sure what the goal was in level 2, the quest log was vague."
+T11,0.4.2,Discord,"Needed a hint about where to go next, the objective was confusing."
+T10,0.4.1,notes,"Spent ages looking for the exit in the market district, objective unclear."
+T04,0.4.2,survey,Objective marker doesn't update after picking up the key.
+T06,0.4.2,Discord,Game crashed to desktop on level 2 right after the bridge cutscene.
+T05,0.4.2,notes,Crash on level 2 when entering the sewers.
+T14,0.4.1,survey,"Level 2 crashed twice for me, both times during the bridge collapse."
+T03,0.4.2,Discord,"Hard crash in level 2, lost about 20 minutes of progress."
+T11,0.4.2,notes,The game froze then crashed on level 2 loading screen.
+T16,0.4.2,survey,Crashed on level 2 after opening the inventory during the cutscene.
+T03,0.4.1,Discord,"Level 2 crash again, same spot near the bridge."
+T09,0.4.2,notes,"Crash to desktop on level 2, no error message."
+T03,0.4.1,survey,"Combat feels really satisfying, the parry timing is great."
+T10,0.4.2,Discord,"Love the art style, the lighting in the forest is gorgeous."
+T10,0.4.2,notes,The soundtrack during boss fights is amazing.
+T12,0.4.1,survey,"Dodge roll has too many invincibility frames, feels too forgiving."
+T15,0.4.2,Discord,Controls feel floaty when jumping between platforms.
+T06,0.4.1,notes,"I'd like to remap the dodge button, it's awkward on controller."
+T16,0.4.1,survey,The menu font is too small to read on a TV.
+T07,0.4.2,Discord,Inventory UI is cluttered and hard to navigate.
+T05,0.4.1,notes,Framerate drops in the market district when lots of NPCs are around.
+T13,0.4.2,survey,Some textures pop in late when sprinting through the forest.
+T16,0.4.1,Discord,The story hook is interesting but the dialogue is a bit long.
+T06,0.4.2,notes,I want to know more about the main character's backstory.
+T13,0.4.2,survey,"Tutorial explains combo attacks too quickly, I forgot them right away."
+T05,0.4.2,Discord,The opening tutorial is too long before you get to real combat.
+T18,0.4.2,notes,"Health potions are too rare, I never had enough."
+T14,0.4.2,survey,"Upgrading weapons feels rewarding, more of that please."
+T13,0.4.1,Discord,Footstep sounds are too loud compared to music.
+T05,0.4.1,notes,Enemy variety is good in level 1 but repetitive later.
+T06,0.4.1,survey,Sprinting drains stamina way too fast.
+T08,0.4.1,Discord,Subtitles go by too fast during cutscenes.
+T01,0.4.2,notes,"Overall really fun, would play the full game."

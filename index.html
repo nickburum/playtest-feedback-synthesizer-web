@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.x.ai; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Playtest Feedback Synthesizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Playtest Feedback Synthesizer</h1>
+    <p class="caption">Upload playtest feedback, get ranked themes with severity, quotes and next steps.</p>
+  </header>
+
+  <section class="card" id="settings">
+    <h2>xAI settings</h2>
+    <p class="note">Bring your own xAI API key. It is sent only to <code>https://api.x.ai</code> in the
+      <code>Authorization</code> header, is never stored in <code>localStorage</code> or cookies, and is never logged.</p>
+    <div class="row">
+      <label class="grow">API key
+        <input type="password" id="apiKey" autocomplete="off" spellcheck="false" placeholder="xai-...">
+      </label>
+      <label>Model
+        <input type="text" id="model" value="grok-4.3" spellcheck="false">
+      </label>
+    </div>
+    <label class="check"><input type="checkbox" id="rememberKey"> Keep key for this browser tab only (sessionStorage, cleared when the tab closes)</label>
+  </section>
+
+  <section class="card" id="input">
+    <h2>Input</h2>
+    <div class="row radios" role="radiogroup">
+      <label class="check"><input type="radio" name="mode" value="csv" checked> Upload CSV</label>
+      <label class="check"><input type="radio" name="mode" value="paste"> Paste text</label>
+      <button type="button" id="loadSample" class="secondary">Load sample data</button>
+    </div>
+    <div id="csvMode">
+      <label>Feedback CSV <input type="file" id="csvFile" accept=".csv,text/csv"></label>
+      <p id="csvInfo" class="note"></p>
+      <label id="colPickerWrap" hidden>Feedback column <select id="colPicker"></select></label>
+    </div>
+    <div id="pasteMode" hidden>
+      <label>One comment per line <textarea id="pasteText" rows="8"></textarea></label>
+    </div>
+    <button type="button" id="runBtn" class="primary" disabled>Synthesize</button>
+    <div id="progressWrap" hidden><progress id="progress" max="1" value="0"></progress> <span id="progressMsg"></span></div>
+    <div id="messages"></div>
+  </section>
+
+  <section id="results" hidden>
+    <div class="metrics">
+      <div class="metric"><span class="label">Comments</span><span id="mComments" class="value"></span></div>
+      <div class="metric"><span class="label">Testers</span><span id="mTesters" class="value"></span></div>
+      <div class="metric"><span class="label">Overall sentiment (-2..2)</span><span id="mSentiment" class="value"></span></div>
+    </div>
+
+    <h2>Ranked themes</h2>
+    <div class="tablewrap"><table id="themesTable"></table></div>
+    <div id="themeCards"></div>
+
+    <h2>Bug list</h2>
+    <div class="tablewrap"><table id="bugsTable"></table></div>
+
+    <h2>Mentions by category</h2>
+    <div id="categoryChart" class="chart"></div>
+
+    <div class="row downloads">
+      <button type="button" id="dlMd" class="secondary">Download Markdown report</button>
+      <button type="button" id="dlCsv" class="secondary">Download tagged comments (CSV)</button>
+    </div>
+  </section>
+
+  <footer class="note">Runs entirely in your browser. Port of the Streamlit
+    <a href="https://github.com/nickburum/playtest-feedback-synthesizer">Playtest Feedback Synthesizer</a>.</footer>
+</main>
+<script src="vendor/papaparse.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
